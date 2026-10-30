@@ -238,6 +238,8 @@ Lade keine echten Tokens, WLAN-Passwörter oder Schlüssel auf GitHub hoch. Verw
 Scanne und teste nur Systeme, die dir gehören.
 Ein geänderter SSH-Port hilft nur gegen Massenscans. Die eigentliche Sicherheit kommt von Schlüssel und 2FA.
 Lizenz
+
 MIT License
+
 Hinweis zur KI-Nutzung
 Für diese README und für das Aufräumen des Codes habe ich KI (Claude von Anthropic) als Unterstützung verwendet.
