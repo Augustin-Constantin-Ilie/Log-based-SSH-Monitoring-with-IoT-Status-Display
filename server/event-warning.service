@@ -1,0 +1,11 @@
+[Unit]
+Description=SSH Alarm
+After=network-online.target ssh.service
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/event-warning/event-warning.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
