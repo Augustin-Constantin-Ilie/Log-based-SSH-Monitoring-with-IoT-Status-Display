@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Augustin-Constantin Ilie",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 16,
+      "left": 130.4,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp1", "top": 9.6, "left": -4.76, "attrs": {} },
+    {
+      "type": "wokwi-led-strip",
+      "id": "strip1",
+      "top": 155.7,
+      "left": 153.6,
+      "attrs": { "pixels": "10", "pixelShape": "square" }
+    }
+  ],
+  "connections": [
+    [ "lcd1:GND", "esp1:GND.2", "black", [ "h-9.6", "v-9.6" ] ],
+    [ "lcd1:VCC", "esp1:3V3", "red", [ "h-28.8", "v-67.1", "h-115.2", "v48" ] ],
+    [ "lcd1:SDA", "esp1:21", "green", [ "h-19.2", "v19.4" ] ],
+    [ "lcd1:SCL", "esp1:22", "orange", [ "h-28.8", "v-9.3" ] ],
+    [ "strip1:VDD", "esp1:5V", "red", [ "h-48", "v67.2", "h-115.2", "v-9.6" ] ],
+    [ "strip1:VSS", "esp1:GND.3", "black", [ "h-38.4", "v-87.2" ] ],
+    [ "strip1:DIN", "esp1:18", "blue", [ "h-28.8", "v-58" ] ]
+  ],
+  "dependencies": {}
+}
