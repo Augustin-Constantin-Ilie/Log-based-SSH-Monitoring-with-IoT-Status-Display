@@ -1,0 +1,10 @@
+[DEFAULT]
+bantime = 1h
+findtime = 10m
+maxretry = 2
+backend = systemd
+ignoreip = !YOURE TRUSTED IPs HERE (Include Prefix aswell)!
+
+[sshd]
+enabled = true
+port = 22
